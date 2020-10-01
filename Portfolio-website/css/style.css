@@ -36,6 +36,7 @@ a {
   font-size: 4rem;
   line-height: 1;
   padding-bottom: 1rem;
+  text-transform: uppercase;
 }
 
 #header-home .header-content p {
@@ -92,6 +93,7 @@ a {
 .little-circle h2 {
   color: #fff;
   font-weight: bolder;
+  text-transform: uppercase;
 }
 
 #logo {
@@ -152,6 +154,7 @@ img {
   text-align: center;
   line-height: 1.2;
   font-size: 2rem;
+  text-transform: uppercase;
 }
 
 #home-a p {
@@ -168,13 +171,14 @@ img {
   display: grid;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
-  height: 40vh;
+  height: 100%;
   grid-gap: 1rem;
   text-align: center;
   padding: 2rem 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-overflow: ellipsis;
 }
 
 #home-a .specials i {
@@ -204,7 +208,7 @@ img {
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   text-align: center;
-  height: 35vh;
+  height: 100%;
 }
 
 #home-b .specials-b div {
@@ -256,6 +260,7 @@ img {
   font-size: 2rem;
   font-weight: normal;
   padding: 0.75rem 1rem;
+  text-transform: uppercase;
 }
 
 #home-c p {
@@ -271,7 +276,7 @@ img {
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   text-align: center;
-  height: 45vh;
+  height: 100%;
   margin: 0 4rem;
   padding: 0.75rem 1rem;
   grid-gap: 2rem;
@@ -291,6 +296,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-overflow: ellipsis;
 }
 
 #home-c .specials-c div i {
@@ -331,5 +337,95 @@ img {
 
 #main-footer .footer-content .social .fab:hover {
   background: #ffbc00;
+}
+
+#about-header-home {
+  background: url("../img/showcase.jpg") no-repeat center/cover;
+  background-position-y: -280px;
+  height: 12vh;
+  border-bottom: 3px solid #ffbc00;
+}
+
+#about-header-home .header-content {
+  text-align: center;
+  padding-top: 20%;
+}
+
+.about-img {
+  width: 33%;
+  height: 28%;
+  display: -ms-grid;
+  display: grid;
+  grid-column: 1fr 3fr;
+}
+
+#about {
+  width: 100%;
+  height: 100%;
+}
+
+#about-home-a {
+  color: #444;
+  padding-top: 4rem;
+  padding-left: 1rem;
+}
+
+#about-home-a h2 {
+  text-align: center;
+  line-height: 1.2;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+#about-home-a h4 {
+  font-size: 1rem;
+  padding: 0.5rem 0.5rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#about-home-a p {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  padding-bottom: 1.5rem;
+}
+
+#about-home-a .special-a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#about-home-a .content {
+  width: 70%;
+  margin-left: 1rem;
+  padding: 0 0.75rem;
+  border-left: 3px solid #ffbc00;
+}
+
+#about-home-a .specials {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2rem 1rem;
+}
+
+#about-home-a .specials i {
+  color: #ffbc00;
+}
+
+#about-home-a .specials h3 {
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=style.css.map */

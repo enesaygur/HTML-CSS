@@ -29,8 +29,8 @@ a{
          h1{
             font-size: 4rem;
             line-height: 1;
-            
             padding-bottom: 1rem;
+            text-transform: uppercase;
             }
          p{
             padding-bottom: 2rem;
@@ -73,6 +73,7 @@ a{
     h2{
         color:#fff;
         font-weight: bolder;
+        text-transform: uppercase;
             }
 
     }
@@ -127,6 +128,7 @@ img{
         text-align: center;
         line-height: 1.2;
         font-size: 2rem;
+        text-transform: uppercase;
 
         }
         & p {
@@ -140,11 +142,12 @@ img{
     color:black;
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    height: 40vh;
+    height: 100%;
     grid-gap: 1rem;
     text-align: center;
     padding: 2rem 0;
     justify-content: center;
+    text-overflow: ellipsis;
 
     & i{
         font-size: 2rem;
@@ -173,7 +176,7 @@ img{
         display: grid;
         grid-template-columns: repeat(4,1fr);
         text-align: center;
-        height: 35vh;
+        height:100%;
 
         div{
             display: flex;
@@ -217,6 +220,7 @@ img{
         font-size: 2rem;
         font-weight: normal;
         padding: 0.75rem 1rem;
+        text-transform: uppercase;
             }
     & p{
         text-align: center;
@@ -228,7 +232,7 @@ img{
     .specials-c{ display: grid;
         grid-template-columns: repeat(4,1fr);
         text-align: center;
-        height: 45vh;
+        height:100%;
         margin: 0 4rem;
         padding: 0.75rem 1rem;
         grid-gap: 2rem;
@@ -239,6 +243,7 @@ img{
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            text-overflow: ellipsis;
             
 
             i{
@@ -272,3 +277,83 @@ img{
     }
    }     
 }
+
+    #about-header-home{
+    background: url('../img/showcase.jpg') no-repeat center/cover;
+    background-position-y: -280px;
+    height: 12vh;
+    border-bottom: 3px solid #ffbc00;
+
+    & .header-content{
+        text-align: center;
+        padding-top: 20%;
+    }
+}
+
+.about-img{
+    width: 33%;
+    height: 28%;
+    display: grid;
+    grid-column: 1fr 3fr;
+    }
+#about{
+    width: 100%;
+    height: 100%;
+    }
+
+#about-home-a {
+    color: #444;
+    padding-top: 4rem;
+    padding-left: 1rem;
+
+     h2 {
+        text-align: center;
+        line-height: 1.2;
+        font-size: 2rem;
+        text-transform: uppercase;
+
+        }
+    h4{
+        font-size: 1rem;
+        padding: 0.5rem 0.5rem;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        }
+        & p {
+        text-align: center;
+        font-size: 1.2rem;
+        line-height: 1.2;
+        padding-bottom: 1.5rem;
+        
+        }
+        .special-a {
+            display: flex;
+            flex-direction: row;;
+            }
+        
+        .content{
+            width: 70%;
+            margin-left:1rem;
+            padding: 0 0.75rem;
+            border-left: 3px solid #ffbc00;
+            }
+
+        .specials {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            text-align: center;
+            justify-content: center;
+            padding: 2rem 1rem;
+
+            i{
+                color: #ffbc00;
+                }
+            h3{
+                text-transform: uppercase;
+                }
+            }
+        
+
+}
+    
